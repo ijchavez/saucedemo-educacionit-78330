@@ -8,7 +8,7 @@ import support.DriverManager;
 public class LoginPage {
 
     private WebDriver driver = DriverManager.getDriver();
-
+ 
     private static final By USERNAME = By.id("user-name");
     private static final By PASSWORD = By.id("password");
     private static final By LOGIN_BUTTON = By.id("login-button");
