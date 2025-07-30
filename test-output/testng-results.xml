@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-25T12:44:54 ART" name="Default suite" finished-at="2025-07-25T12:45:00 ART" duration-ms="6178">
+  <suite started-at="2025-07-29T21:25:32 ART" name="Default suite" finished-at="2025-07-29T21:25:36 ART" duration-ms="3243">
     <groups>
     </groups>
-    <test started-at="2025-07-25T12:44:54 ART" name="Default test" finished-at="2025-07-25T12:45:00 ART" duration-ms="6178">
-      <class name="cartTests.CartTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:cartTests.CartTest@7e6f74c]" started-at="2025-07-25T12:44:54 ART" name="setUp" finished-at="2025-07-25T12:44:58 ART" duration-ms="4468" status="PASS">
+    <test started-at="2025-07-29T21:25:32 ART" name="Default test" finished-at="2025-07-29T21:25:36 ART" duration-ms="3243">
+      <class name="com.advancedseleniumfunctions.productFilteringTests.ProductFilteringTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.advancedseleniumfunctions.productFilteringTests.ProductFilteringTests@1f2586d6]" started-at="2025-07-29T21:25:33 ART" name="setUp" finished-at="2025-07-29T21:25:35 ART" duration-ms="2617" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="cartTest()[pri:0, instance:cartTests.CartTest@7e6f74c]" started-at="2025-07-25T12:44:58 ART" name="cartTest" finished-at="2025-07-25T12:45:00 ART" duration-ms="1686" status="PASS">
+        <test-method signature="testVerduraFilter()[pri:0, instance:com.advancedseleniumfunctions.productFilteringTests.ProductFilteringTests@1f2586d6]" started-at="2025-07-29T21:25:35 ART" name="testVerduraFilter" finished-at="2025-07-29T21:25:36 ART" duration-ms="602" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- cartTest -->
-      </class> <!-- cartTests.CartTest -->
+        </test-method> <!-- testVerduraFilter -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.advancedseleniumfunctions.productFilteringTests.ProductFilteringTests@1f2586d6]" started-at="2025-07-29T21:25:36 ART" name="tearDown" finished-at="2025-07-29T21:25:36 ART" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.advancedseleniumfunctions.productFilteringTests.ProductFilteringTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

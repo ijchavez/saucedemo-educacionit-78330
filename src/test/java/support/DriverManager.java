@@ -21,7 +21,7 @@ public class DriverManager {
 		chromeOptions.addArguments(
 				START_MAXIMIZED, DISABLE_INFOBARS, 
 				DISABLE_EXTENSIONS, DISABLE_NOTIFICATIONS,
-				DISABLE_GPU, INCOGNITO, "--headless=true");
+				DISABLE_GPU, INCOGNITO);
 		disableInfobarForChrome(chromeOptions);
 
 		return new ChromeDriver(chromeOptions);

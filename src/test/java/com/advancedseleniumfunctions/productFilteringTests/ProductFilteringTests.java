@@ -43,7 +43,7 @@ public class ProductFilteringTests {
     
 	@AfterMethod
 	public void tearDown() {
-		driver.quit();
+		//driver.quit();
 	}
 	
 }

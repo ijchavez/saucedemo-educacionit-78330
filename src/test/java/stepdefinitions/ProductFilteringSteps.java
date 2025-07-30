@@ -17,7 +17,7 @@ public class ProductFilteringSteps {
     @Given("que abro la página de productos")
     public void abrirPagina() {
         driver = DriverManager.getDriver();
-        driver.get(Constants.NEOCITIES_URL + Constants.DROPDOWN_TABLE_PATH);
+        driver.get(Constants.NEOCITIES_URL + Constants.SELENIUM_TEST_PAGES_PATH  +  Constants.DROPDOWN_TABLE_PATH);
         
         productFilteringPage = new ProductFilteringPage(driver);
     }
