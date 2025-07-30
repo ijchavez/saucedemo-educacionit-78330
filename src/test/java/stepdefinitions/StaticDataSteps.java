@@ -15,7 +15,7 @@ public class StaticDataSteps {
 
     @Given("el usuario abre la página de datos estáticos")
     public void abrirPagina() {
-        DriverManager.getDriver().get(Constants.NEOCITIES_URL + Constants.DATATABLE_PATH);
+        DriverManager.getDriver().get(Constants.NEOCITIES_URL + Constants.SELENIUM_TEST_PAGES_PATH  +  Constants.DATATABLE_PATH);
         staticDataPage = new StaticDataPage(DriverManager.getDriver());
     	
     }
