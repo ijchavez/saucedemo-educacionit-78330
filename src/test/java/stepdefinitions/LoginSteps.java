@@ -29,7 +29,7 @@ public class LoginSteps {
         loginPage.clickLogin();
     }
 
-    @Then("debería ver el mensaje {string}")
+    @Then("debería ver el mensaje debajo {string}")
     public void validarMensaje(String esperado) {
         String real = loginPage.getMessageText();
         Assert.assertEquals(esperado, real);
