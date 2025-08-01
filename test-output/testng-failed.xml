@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="cartTests.CartTest">
+      <class name="com.advancedseleniumfunctions.GeoLocationsBasic">
         <methods>
+          <include name="geoLocationTest"/>
+          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="cartTest"/>
         </methods>
-      </class> <!-- cartTests.CartTest -->
+      </class> <!-- com.advancedseleniumfunctions.GeoLocationsBasic -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

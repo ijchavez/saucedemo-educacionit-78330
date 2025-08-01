@@ -4,8 +4,6 @@ import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterMethod;
@@ -14,7 +12,6 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.advancedseleniumfunctions.utilities.LocatorType;
-import com.advancedseleniumfunctions.utilities.Utilities;
 import com.advancedseleniumfunctions.utilities.WaitUtilities;
 
 @Listeners(extentreports.TestListener.class)
@@ -24,14 +21,12 @@ public class GeoLocationsBasic {
 	
 	@BeforeMethod
 	public void setUp(ITestContext context) throws InterruptedException {
-	    ChromeOptions options = new ChromeOptions();
-	    options.addArguments("start-maximized");		
 
-	    driver = new ChromeDriver(options);
+	    driver = GeoEnabledDriverFactory.createDriverWithLocationPermission();
 
 	    context.setAttribute("WebDriver", driver);
 
-	    Utilities.setCoordinatesAlternative(driver, 35.8235, -78.8256);
+	    GeoEnabledDriverFactory.setFakeLocation(driver, 35.8235, -78.8256);
 	    driver.get(url);
 	}
 	@Test
@@ -46,6 +41,8 @@ public class GeoLocationsBasic {
 		}
 		Assert.assertTrue(addressList.get(1).getText().contains("NC"));
 	}
+	
+
 	@AfterMethod
 	public void tearDown() {
 		driver.close();
